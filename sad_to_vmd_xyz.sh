@@ -1,4 +1,11 @@
 #!/bin/bash
+#description     :This script will convert ART configuration files into VMD readable format
+#author		 :Bharat Kumar Sharma at Concordia University, Montreal, Canada
+#date            :November 16, 2016
+#usage		 :sh script.sh
+# There is no support and no warranty. Use this script at your own risk.
+#==============================================================================
+
 rm temp.xyz
 natoms=8
 
