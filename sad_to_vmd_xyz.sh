@@ -19,7 +19,7 @@ coorLineNumber=3
 
 for z in $list;do
 
-printf  "8\n" >>temp.xyz
+printf  "$natoms\n" >>temp.xyz
 printf "MOLECULAR TITLE\n" >>temp.xyz
 
 for ((i=1; i<=$natoms; i++)); do
