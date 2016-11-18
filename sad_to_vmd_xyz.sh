@@ -6,7 +6,6 @@
 # There is no support and no warranty. Use this script at your own risk.
 #==============================================================================
 
-rm temp.xyz
 natoms=8
 
 
@@ -28,9 +27,10 @@ awk 'FNR=='$coorLineNumber+$i' {print $0}' ../${z} >>temp.xyz
 done
 done
 
-sed 's/\([^ ]*\) [6]*[6][6]* /\1 C /' temp.xyz > output_C.xyz
-sed 's/\([^ ]*\) [1]*[1][1]* /\1 H /' output_C.xyz > output.xyz
+#sed 's/\([^ ]*\) [6]*[6][6]* /\1 C /' temp.xyz > output_C.xyz
+#sed 's/\([^ ]*\) [1]*[1][1]* /\1 H /' output_C.xyz > output.xyz
+sed 's/\([^ ]*\) [6]*[6][6]* /\1 C /; s/\([^ ]*\) [1]*[1][1]* /\1 H /' temp.xyz > output.xyz
 
 #clearing files
-rm temp.xyz output_C.xyz 
+rm temp.xyz 
 
