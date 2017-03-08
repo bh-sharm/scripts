@@ -31,6 +31,7 @@ done
 #sed 's/\([^ ]*\) [1]*[1][1]* /\1 H /' output_C.xyz > output.xyz
 sed 's/\([^ ]*\) [6]*[6][6]* /\1 C /; s/\([^ ]*\) [1]*[1][1]* /\1 H /' temp.xyz > output.xyz
 #sed 's/\([^ ]*\) [6]*[6][6]* /\1 C /; s/\([^ ]*\) [8]*[8][8]* /\1 O /; s/\([^ ]*\) [1]*[1][1]* /\1 H /' temp.xyz > output.xyz
+#sed 's/\([^ ]*\) [6]*[6][6]* /\1 C /; s/\([^ ]*\) [8]*[8][8]* /\1 O /; s/\([^ ]*\) [1]*[1][1]* /\1 H /; s/\([^ ]*\) [7]*[7][7]* /\1 N /' temp.xyz > output_ggg.xyz
 
 #clearing files
 rm temp.xyz 
