@@ -1,7 +1,7 @@
 #!/bin/bash
-#description     :This script will convert ART configuration files into VMD readable format
+#description     :This script will convert ART configuration files into VMD readable format and print energy values
 #author          :Bharat Kumar Sharma at Concordia University, Montreal, Canada
-#date            :November 16, 2016
+#date            :March 2017
 #usage           :sh script.sh
 # There is no support and no warranty. Use this script at your own risk.
 #==============================================================================
